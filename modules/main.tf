@@ -5,13 +5,13 @@ locals {
 module "local_file" {
   source = "./file-modules"
   in-filename = local.filename
-  in-permission1 = local.filename
+  file_permission = var.in-filename
 }
 
 module "file-module-dos" {
   source = "./file-modules"
 
   in-filename = "dos.txt"
-  in-permission2 = local.filename
+  file_permission = var.in-permission1
   
 }

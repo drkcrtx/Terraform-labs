@@ -1,13 +1,11 @@
 variable "in-filename" {
   type = string
+  default = "400"
 }
 
-variable "in-permision1"{
+variable "in-permission1"{
   type = string
- 
+  default = "600" 
 }
 
-  variable "in-permision2"{
-  type = string
 
- }
