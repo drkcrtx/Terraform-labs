@@ -7,3 +7,14 @@ variable "ami" {
 variable "instancia" {
   type = string
 }
+
+variable "subnet_id" {
+  type = string
+}
+
+variable "vpc_id" {
+ type = string
+}
+variable "tag" {
+  type = string
+}
